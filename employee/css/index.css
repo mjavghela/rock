@@ -1,0 +1,221 @@
+
+.nav2ul{
+	/*display: inline-block;*/
+	display: none;
+	/*float: right;*/
+}
+@media screen and (max-width: 768px)
+{	
+
+	.div{
+		padding-inline-start: 14%;
+
+	}
+	.div2{
+		margin:5% 29px 0px 0px;
+	}
+	.nav1 {
+	    padding: 7px 23px 24px 0px;
+	    margin: 10px;
+	    background-color: black;
+	    /* border: 2px solid black; */
+	}
+	.nav1ul{
+		padding-inline-start: 0px;
+		margin: 3px;
+		display: none;
+	}
+	.nav1ul{
+
+	}
+	.nav1ul li{
+		display: inline;
+		margin: 2px;
+		padding :5px;
+
+
+	}
+	.nav2ul{
+		display:block;
+	}
+	.nav2ul li{
+		display: inline-block;
+		float: right;
+	}
+
+	
+/******************************************************************/
+
+	.main {
+    display: inline-block;
+    /* background-color: lightgrey; */
+    /* width: 100%; */
+    /* border: 1px solid black; */
+    padding-inline-start: 13%;
+    padding-inline-end: 14%;
+    margin-bottom: 11px;
+    }
+
+
+
+
+    .main1 {
+    /*display: inline-block;*/
+    /*float: left;*/
+    /*width: 35%;*/
+    height: 300px;
+    overflow: scroll;
+    /*background-color: grey;*/
+    /* border: 2px solid green; */
+	}
+	.main2{
+		 height:300px;
+
+	}
+	.main2 img{
+		height: 300px;
+	}
+
+
+	.his {
+	    display: inline-block;
+	    width: auto;
+	    padding-inline-start: 12%;
+	    padding-inline-end: 15%;
+	    /* border: 2px solid green; */
+	    margin-bottom: 20px;
+	}
+	.same{
+		width: 50%;
+		overflow: scroll;
+	}
+
+
+
+	.last {
+    display: inline-block;
+    width: auto;
+    padding-inline-start: 11.7%;
+    padding-inline-end: 15%;
+    /* border: 2px solid green; */
+    margin-bottom: 15px;
+    margin-top: 20px;
+	}
+
+	.lastsame{
+		width: 50%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.spacing{
+		    width: 48%;
+		    margin-right: 4px;
+	}
+	.smalltitle{
+		margin-left: 4px;
+	}
+	.nav2{
+		margin-right: 8px;
+	}
+	.last2-2{
+		width: 45%;
+		margin-left: 0px;
+
+		overflow: scroll;
+		height: 150px;
+	} 
+	.last2-1{
+		margin-right: 0px;
+	}
+
+/****************************************************************/
+	.footer {
+	    display: inline-block;
+	    background-color: #4e4747;
+	    width: 100%;
+	    height: auto;
+	}
+
+
+	.text {
+		padding: 10px 0px 8px 0px;
+		display: inline-block;
+		/*border: 2px solid black;*/
+		float: left;
+		padding-inline-start: 13%;
+
+		}
+
+	.text2{
+		padding: 10px 0px 8px 0px;
+		display: inline-block;
+		/*border: 2px solid black;*/
+		float: right;
+		padding-inline-end: 15%;
+	}
+}
+
+/********************************************************/
+
+@media screen and (max-width: 550px){
+
+
+
+	.div1 {
+    /* display: inline-block; */
+    margin: 0px 0px 0px 0px;
+    /* border: 2px solid black; */
+}
+
+
+
+	.nave {
+    padding-inline-start: 2%;
+    padding-inline-end: 4%;
+    padding-bottom: 1px;
+    margin: 41px 37px 7px 33px;
+    /* padding: 2px; */
+    /* border: 2px solid black; */
+    /* padding-inline-start: 20px; */
+}
+
+
+.div2 {
+    margin: 3% 23px 0px 0px;
+}
+
+.main1{
+	    width: 37%;
+}
+
+.main2 {
+    height: 300px;
+}
+
+
+.same {
+    width: auto;
+    overflow: scroll;
+}
+
+.spacing {
+    width: 48%;
+    margin-right: 3px;
+}
+
+.position{
+	    overflow: scroll;
+    	height: 200px;
+}
+
+.last2-2 {
+    width: 53%;
+    margin-left: 0px;
+    overflow: scroll;
+    height: 150px;
+}
+
+.last2-1 img{
+	width: 140%;
+}
+}

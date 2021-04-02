@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		p{
+			color: red;
+			font-size: 12px;
+		}
+		sup{
+			color: red;
+		}
+	</style>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	 <script type="text/javascript" src="js/ajax.js" ></script>
+</head>
+<body>
+	<div class="container-sm p-3 my-3 border">
+		<form  name="myForm" method="POST" onsubmit="return validate()" action="connect.php" class="form-group"  enctype="multipart/form-data">
+			<div>
+				<label>Frist Name<SUP>*</SUP>:</label>
+				<input type="text" name="firstname" class="form-control col-sm-6  firstname"  >
+				<p id="fname"></p>
+			</div>
+			<div>
+				<label>Last Name<SUP>*</SUP>:</label>
+				<input type="text" name="lastname" class="form-control  col-sm-6 lastname" >
+				<p id="lname"></p>
+			</div>
+			
+			<div>
+				<label>Streat:</label>
+				<input type="text" name="streat" class="form-control col-sm-6  streat">
+				<p id="streat"></p>
+			</div>
+			<div >
+				<label>Country<SUP>*</SUP>:</label>
+				<select class="form-control col-sm-3 country" name="country1" id="country1">
+					<!-- <option></option>
+					<option name="country" value="India">India</option>
+					<option name="country" value="Canada">Canada</option>
+					<option name="country" value="New York">New York</option> -->
+				</select>
+				<p id= "country"></p>
+			</div>
+			<div >
+				<label>State<SUP>*</SUP>:</label>
+				<select class="form-control col-sm-3 state" name="state1" id="state1">
+					<!-- <option></option> -->
+					<!-- <option>gujarat</option>
+					<option>kolkata</option>
+					<option>delhi</option> -->
+				</select>
+				<p id= "state"></p>
+			</div>
+			<div >
+				<label>City<SUP>*</SUP>:</label>
+				<select class="form-control col-sm-3 city" name="city1" id="city1">
+					<!-- <option></option>
+					<option>ahemdabad</option>
+					<option>nadid</option>
+					<option>anand</option> -->
+				</select>
+				<p id= "city"></p>
+			</div>
+			<div>
+				<label>Contact No<SUP>*</SUP>:</label>
+				<input type="tel" name="contactno" placeholder="123-456-78910" pattern="[0-9]{10}" maxlength="10" class="form-control col-sm-3 contactno" >
+				<p id="contactno"></p>
+			</div>
+			<div>
+				<label>Email ID:</label>
+				<input type="text" name="email" class="form-control col-sm-3 email">
+				<p id="email"></p>
+			</div>
+			<div>
+				<label>Gender<SUP>*</SUP>:</label>
+				<div class="form-control col-sm-3 gender">
+					<input type="radio" id="gender1" name="gender" value="male" >
+					<label>Male</label>
+					<input type="radio" id="gender2"  name="gender" value="Female">
+					<label>Female</label>
+					<input type="radio" id="gender3" name="gender" value="Other">
+					<label>Other
+					</label>
+				</div>
+					<p id="gender"></p>
+			</div>
+			<div >
+				<label>Date of Birth<SUP>*</SUP>:</label>
+				<input type="Date" name="dob" max="2021-03-09" class="form-control col-sm-3 " id="fdob" >
+				<p id="dob"> example : 2000/03/31</p>
+			</div>
+			<div>
+				<label>Image:</label>
+				<input type="file" name="image" class="form-control col-sm-3 image" id="ce" ><P id="image">(only .jpg .jpeg .png)</P>
+				<img id="blah" src="#" alt="your image" width="50" height="50" />
+			</div>
+			<div>
+				<label>Password<SUP>*</SUP>:</label>
+				<input type="Password" name="password" class="password">
+				<p id="password"></p>
+			</div>
+			<div>
+				<label>Confirm Password<SUP>*</SUP>:</label>
+				<input type="Password" name="confirmpassword" class="confirmpassword">
+				<p id="confirmpassword"></p>
+			</div>
+			<div>
+				<label>Hobby:</label>
+				<div class="form-control col-sm-5 " class="selecthobby">
+					<input type="checkbox"  id ="checkbox1" name="check_list[]" value="Playing game">
+					<label>Palying Game</label>
+					<input type="checkbox" id="checkbox2" name="check_list[]" value="Reading">
+					<label>Reading</label>
+					
+				</div>
+				<p id="hobby"></p>
+			</div>
+			<div >
+				<label>Category<SUP>*</SUP>:</label>
+			
+				<select class="form-control col-sm-3 category" name="category1">
+					<option ></option>
+					<option name="category" value="Devloper">Devloper</option>
+					<option name="category" value="Desinging">Desinging</option>
+					<option name="category" value="Software">Software checker</option>
+					<option name="category" value="Trainer">Trainer</option>
+				</select>
+				<p id="category"></p>
+			</div>
+			
+			<div>
+				<button type="Submit" class="btn btn-primary" onclick="validate()" name="submit" >Submit</button>
+			</div>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="js/ajax.js" >
+		
+	
+	</script>
+</body>
+</html>
